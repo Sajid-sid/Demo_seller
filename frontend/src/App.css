@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #29231f;
+}
+
+.navbar {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  letter-spacing: 4px;
+  color: #9a744d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #29231f;
+}
+
+.hero {
+  min-height: 450px;
+  background: linear-gradient(
+      90deg,
+      rgba(0,0,0,.65),
+      rgba(0,0,0,.1)
+    ),
+    url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600")
+    center/cover;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  color: white;
+}
+
+.hero-content p {
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-family: Georgia, serif;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.hero-content span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.hero-content a {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #b28a5c;
+  color: white;
+  text-decoration: none;
+}
+
+.products-section {
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.section-label {
+  color: #a47b50;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.products-section h2 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  margin: 15px 0 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background: #faf8f5;
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info p {
+  color: #a47b50;
+}
+
+.product-info h3 {
+  margin: 10px 0;
+}
+
+.product-info h4 {
+  margin-bottom: 15px;
+}
+
+.product-info button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  background: #29231f;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  padding: 35px;
+  background: #29231f;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+}
